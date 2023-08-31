@@ -13,14 +13,16 @@ public class Numeros {
     numero.close();
     }
     public void Maior() {
+        String maiorvalor = " é o maior dos três números";
+        
     if (n1 > n2 && n1 > n3){
-        System.out.println(n1+" é o maior dos três números");
+        System.out.println(n1+maiorvalor);
     }
     else if(n2 > n1 && n2 > n3){
-        System.out.println(n2+" é o maior dos três números");
+        System.out.println(n2+maiorvalor);
     }
     else{
-        System.out.println(n3+" é o maior dos três números");
+        System.out.println(n3+maiorvalor);
     }
     }
 }
