@@ -14,11 +14,11 @@ public class Media {
         contamedia = ((n1+n2)/2);
     }
     public void analise(){
-        if(contamedia >= 7){
-        System.out.println("Aprovado!");
+        if(contamedia == 10){
+        System.out.println("Aprovado com distinção!");
         }
-        else if(contamedia == 10){
-            System.out.println("Aprovado com distinção!");
+        else if(contamedia >= 7){
+            System.out.println("Aprovado!");
         }
         else{
             System.out.println("Reprovado!");
