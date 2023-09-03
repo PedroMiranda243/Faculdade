@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Conta {
     Scanner acao = new Scanner(System.in);
 
-    double saldo = 0, deposito, saque, taxa = 0.005;
+    double saldo = 0, deposito, saque;
 
     public double depositar(){
         System.out.println("Qual o valor do depósito? \n");
@@ -16,8 +16,8 @@ public class Conta {
     public double sacar(){
         System.out.println("Qual o valor do saque?\n");
         saque = acao.nextDouble();
-        saque = saque-(saque*taxa);
-        saldo -= saque;
+        double taxa = (saque*0.005);
+        saldo -= saque + taxa;
          System.out.println("Saque realizado no valor de: R$"+saque);
          return saque;
     }
