@@ -1,0 +1,98 @@
+package litrao;
+import java.util.Scanner;
+/**
+ *
+ * @author 01612676
+ */
+public class Litrao {
+
+
+/**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        precos client = new precos();
+        boolean exit = false;   
+        Scanner ler = new Scanner(System.in);
+          System.out.println("Bem-vindo ao posto!\n");
+        while(exit == false){
+            System.out.println("\n-----Qual tipo de Combustivel você deseja colocar-----\n");
+            System.out.println("A-para alcool.\nG- para Gasolina.\nE-Não quero abastecer.");
+            String op = ler.next();
+            
+            switch(op){
+            
+                case "A":
+                 System.out.println("Quantos litros você deseja colocar?");
+                 double litro = ler.nextDouble();
+                 client.alcool(litro);
+                   break;
+                    
+                case "G":
+                    System.out.println("Quantos litros você deseja colocar?");
+                  litro = ler.nextDouble();
+                  client.gasolina(litro);
+                  
+                   break;
+                    
+                case "E":
+                   System.out.println("Fechando o sistema...");
+                   exit = true;
+                    break;
+                    
+                default:
+                    System.out.println("sinto muito,essa opção não é válida");
+                    
+               
+            }
+            
+            
+            
+            
+        }
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package litrao;
+import java.util.Scanner;
+/**
+ *
+ * @author 01612676
+ */
+public class precos {
+double precoG = 5.89;
+double precoA = 3.80;
+    
+    
+public double alcool(double litro){
+if(litro <= 20.0){
+precoA = precoA - (precoA*0.03);  
+}else{
+precoA = precoA - (precoA*0.05);    
+}
+System.out.println("O valor a ser pago é de: R$"+precoA*litro);
+
+return precoA;    
+}    
+ 
+
+public double gasolina(double litro){
+if(litro <= 20.0){
+precoG = precoG - (precoG*0.04);  
+}else{
+precoG = precoG - (precoG*0.06);    
+}
+System.out.println("O valor a ser pago é de: R$"+precoG*litro);
+  
+return precoG;    
+}    
+
+}
