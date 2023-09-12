@@ -26,6 +26,7 @@ public double callmediaP(){
    System.out.println("Digite a terceira nota");
    n3 = ler.nextDouble();
    mp = (n1 * 1 + n2 * 2 + n3 * 3)/6;
+   System.out.println("A sua média ponderada é "+ mp);
    
     
     return mp;   
