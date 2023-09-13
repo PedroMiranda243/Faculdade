@@ -1,0 +1,25 @@
+
+package javaapplication2;
+import java.util.Scanner;
+
+public class JavaApplication2 {
+    
+    public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    double nota[] = new double[3];//lembrar de sempre clocar "new (tip da variavel)[quantidade des espaços no array]" quando for criar sem valor pre-definido
+   
+    
+    
+    for(int i = 0; i < 3 ;i++){//laço de de repetição FOR, para ler cada valor da array, nesse caso são 3 valores contando a partir da posição 0 (0, 1, 2)
+        System.out.println("ta passando aqui");
+        nota[i] = ler.nextDouble();//sintaxe FODA de como ler um array.
+      
+    }
+    double media = (nota[0] +nota[1] + nota[2])/3;//sintaxe FODA de como imprimir cada variavel da array com sua posição
+    System.out.println("media é"+media);
+    
+    
+        
+    }
+    
+}
