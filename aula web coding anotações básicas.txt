@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <h1> Meu Título </h1>
+  <h2> Meu Sub Título </h2>
+  <h3> MEu Tópico 1 </h3> <!-- os h's mudam o tamanho da fonte de acordo com o número, e adciona negrito a fonte-->
+  <p> 1.Paragrafo, Aqui adciono meu texto sobre uma notícia por exemplo </p>
+  <p> 2.Segundo paragrafo de notícia </p>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqAy6FWxWjDYljlKUSNLrOd-GvefNEOaTT1WKKGE6UwipRJA/viewform?embedded=true" width="640" height="786" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>"<!--incorporando formulário google no html-->
+ <!-- <script src="script.js"></script> -->
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
