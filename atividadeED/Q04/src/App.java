@@ -12,7 +12,7 @@ public class App {
         nota[i] = ler.nextDouble();
       
     }
-    double media = (nota[0] +nota[1] + nota[2] + nota[3])/3;
+    double media = (nota[0] +nota[1] + nota[2] + nota[3])/4;
     System.out.println("A media do aluno é: " + media);
     ler.close();
     }
