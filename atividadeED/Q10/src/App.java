@@ -10,20 +10,17 @@ public class App {
                 """;
         System.out.println(menu);
         String sexo = ler.next();
-        try {
+        
             if(sexo.equalsIgnoreCase("F")){
                 System.out.println("Sexo Feminino!");
             }
-            if(sexo.equalsIgnoreCase("M")){
+            else if(sexo.equalsIgnoreCase("M")){
                 System.out.println("Sexo Masculino!");
             }
             else{
                 System.out.println("Sexo inválido!");
             }
-            
-        } catch (Exception e) {
-            System.out.println("Sexo inválido!");
-        }
+        
         ler.close();
     }
 }
