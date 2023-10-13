@@ -27,7 +27,7 @@ public class App {
             exit = true;
             break;
             default:
-                System.out.println("sinto muito, essa opcção está invalida");
+                System.out.println("sinto muito, essa opção está invalida");
           
                 break;
                 
