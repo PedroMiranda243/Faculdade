@@ -1,0 +1,65 @@
+tr{
+    height: 60px;
+}
+td{
+    padding: 10px;
+    border: solid black 0.5px;
+}
+table{
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+body{
+    text-align: center;
+    
+}
+.vermelho{
+color:red
+}
+.verde{
+    color: green;
+}
+.azul{
+    color: blue;
+}
+.amarelo{
+    color: yellow;
+}
+.preto{
+    color: black;
+}
+.roxo{
+    color: purple;
+}
+
+.cor8{
+ background-color: orange;
+ padding: 10px;
+}
+
+.cor4{
+    background-color: red;
+}
+.cor1{
+    background-color: purple;
+}
+.cor7{
+    background-color: green;
+}
+.vazio{
+    background-color: black;
+}
+.cor2{
+    background-color: pink;
+}
+.cor3{
+    background-color: blue;
+}
+.cor5{
+    background-color: yellow;
+}
+.cor6{
+    background-color: lightgrey;
+}
