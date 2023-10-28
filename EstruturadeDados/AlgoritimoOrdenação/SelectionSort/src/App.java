@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int[] vetor1 = new int[]{77,99,44,55,22,88,11,27,66,33};
+        int[] vetor1 = new int[]{5,3,1,4,2};
         System.out.println("Antes da ordenação");
         for(int i=0; i<vetor1.length; i++){
             System.out.print(" "+ vetor1[i]);
@@ -19,14 +19,13 @@ public class App {
 
         for(out = 0; out<nElems-1; out++){
             min = out;
-            for( in=out+1; in<nElems; in++){
-                if(vetor[in]<vetor[min]){
+            for( in=out+1; in<nElems; in++)
+                if(vetor[in]<vetor[min])
                     min = in;
                     temp = vetor[out];
                     vetor[out] = vetor[min];
                     vetor[min]=temp;
-                }
-            }
+                     
         }
     }
 }
