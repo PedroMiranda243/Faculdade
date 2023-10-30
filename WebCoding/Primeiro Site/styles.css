@@ -4,3 +4,12 @@
 .seila{
    color: brown;
 }
+
+body{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    text-align: left;
+}

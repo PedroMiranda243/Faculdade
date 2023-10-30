@@ -8,6 +8,7 @@
 </head>
 
 <body class="fundo">
+    <!-- Seção do site-->
     <div ><h1 class="seila">Minha Primeira Página</h1></div>
 
 <h2>Sobre mim</h2>
@@ -16,5 +17,35 @@
 <p> Minha banda favorita é Arctic Monkeys</p>
 <a href="https://www.youtube.com/watch?v=ngzC_8zqInk"><img src="https://pbs.twimg.com/media/FYEBAw4WAAIqQTF.jpg"
     alt="Paulo Afonso"></p></a>
+
+    <!-- Seção do formulário-->
+    <form method=post action="">
+         <input type="text" name="texto">
+        <input type="reset" value="limpar">
+        <input type="submit" value="conectar">
+    </form>
+
+    <!-- Seção de login exemplo--> 
+    <h3>Autenticação</h3>
+    <form method= "post" action="">
+    <table border="1" cellpadding="10">   
+    <tr><td>Login <br>
+        <input type="text" name="texto" size="50"><br>
+        Senha: <br>
+        <input type="password" name="texto" size="50"> <br> <br>
+        <input type="submit" value="conectar"></td></tr>
+    </table>
+    </form>    
+
+    <!-- Seção de Pagamento exemplo-->
+    <h3>Pagamento</h3>
+    <form method="post" action=""></form>
+    <table>
+     <tr><td>Número do cartão de crédito:</td> <td><input type="text" name="texto" size="40"></td></tr>
+           <tr> <td>Bandeira do cartão:</td> <td> <input type="text" name="texto" size="40"></td></tr>
+            <tr><td>Expira em:</td> <td><input type="text" name="texto" size="20"></td></tr>
+            <tr><td>Valor: </td> <td><input type="text" name="texto" size="20"></td></tr>
+            <tr><td><input type="reset" value="limpar"> <input type="submit" value="enviar"></td></tr>        
+    </table>
 </body>
 </html>
