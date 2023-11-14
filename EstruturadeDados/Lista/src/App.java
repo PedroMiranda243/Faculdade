@@ -26,6 +26,10 @@ public class App {
 		}
 		
 		media = soma / qtd;
+		System.out.println("Média: "+ media);
+		System.out.println("#Lista: "+ s.size());
+		System.out.println("Lista: "+ s);
+
 
 		qtd_acima = 0;
 		for (int i = 0; i < qtd; i++) {
