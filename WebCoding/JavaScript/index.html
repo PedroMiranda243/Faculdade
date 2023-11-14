@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
+
 <body>
- <h1>Exemplo de formulário com Js</h1>
- <form name="frmExemplo">
-    Custo de fábrica do carro <input type="text" id="tagInput" name="texto" size="50">
-    <input type="button" value="Calcular preço do carro" onclick="funcao()">
- </form>
+   <h1>Exemplo de formulário com Js</h1>
+   <form name="frmExemplo">
+      Custo de fábrica do carro <input type="text" id="tagInput" name="texto" size="50" placeholder="0.0">
+      <input type="button" value="Calcular preço do carro" onclick="funcao()">
+   </form>
 
- <h2 id="teste"> </h2>
- 
+   <h2 id="teste"> </h2>
 
- <script>
-    function funcao(){
-       
-      var numero = parseFloat(document.getElementById('tagInput').value);
-        var precoF = numero*(0.40+0.45+0.25)+ numero;
-        document.getElementById("teste").innerHTML = "Valor final do carro: R$" + precoF;
-    }
- </script>
+
+   <script>
+      function funcao() {
+
+         var numero = parseFloat(document.getElementById('tagInput').value);
+         var precoF = numero * (0.40 + 0.45 + 0.25) + numero;
+         document.getElementById("teste").innerHTML = "Valor final do carro: R$" + precoF;
+      }
+   </script>
 
 </body>
+
 </html>

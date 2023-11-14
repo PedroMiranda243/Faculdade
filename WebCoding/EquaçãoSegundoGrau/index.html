@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa cálculo de raízes</h1>
+    <h1>A*X²+B*X+C</h1>
+    <table>
+        <form action="">
+        <tr>  
+            <td>Valor de A:</td> 
+            <td><input type="text" id="A" name="texto" size="20"></td>
+        </tr>
+        <tr>  
+            <td>Valor de B:</td> 
+            <td><input type="text" id="B" name="texto" size="20"></td>
+        </tr>
+        <tr>  
+            <td>Valor de C:</td> 
+            <td><input type="text" id="C" name="texto" size="20"></td>
+        </tr>
+    
+        </form>
+    
+    </table>
+    <p>
+    <input type="button" value="Calcula Raízes" onclick="funcao()">
+
+    <h1 id="teste"></h1>
+    <h1 id="teste2"></h1>
+    <h1 id="teste3"></h1>
+
+        <script>
+            function funcao(){
+                var a = parseFloat(document.getElementById('A').value);
+                var b = parseFloat(document.getElementById('B').value);
+                var c = parseFloat(document.getElementById('C').value);
+
+                var delta = (b*b)-4*a*c
+                
+                var x1 = (-b+Math.sqrt(delta))/2
+                var x2 = (-b-Math.sqrt(delta))/2
+                
+                document.getElementById("teste").innerHTML = "Equação: "+ a+"*X² "+b+"X "+c;
+                
+                if(delta<0){
+                    document.getElementById("teste2").innerHTML = "Raíz complexa";
+                }
+                
+                if (delta>0){
+                    document.getElementById("teste2").innerHTML = "Duas raízes reais e diferentes ";
+                    document.getElementById("teste3").innerHTML = "X1 = "+x1+" e X2 = "+x2;
+
+                }
+                if(delta==0){
+                    document.getElementById("teste2").innerHTML = "Duas raízes reais e iguais";
+                    document.getElementById("teste3").innerHTML = "X1 = "+x1+", e X2 = "+x2;
+
+                }
+                
+
+            }
+        </script>
+    
+</body>
+</html>
