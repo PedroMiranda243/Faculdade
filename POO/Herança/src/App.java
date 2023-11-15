@@ -25,16 +25,16 @@ public class App {
                 r.setBase(ler.nextDouble());
                 System.out.println("Insira a altura: ");
                 r.setAltura(ler.nextDouble());
-                System.out.println("Valor da base: " + r.getBase());
-                System.out.println("Valor da altura: " + r.getAltura());
-                System.out.println("A área do retângulo é: " + r.getResultado());
+                System.out.println("Valor da base: " + r.getBase()+"\n");
+                System.out.println("Valor da altura: " + r.getAltura()+"\n");
+                System.out.println("A área do retângulo é: " + r.getResultado()+"\n");
             }
 
             else if (opc == 2) {
                 System.out.println("Insira a base: ");
                 q.setBase(ler.nextDouble());
-                System.out.println("Valor da base: " + q.getBase());
-                System.out.println("A área do quadrado é: " + q.getResultadoQuadrado());
+                System.out.println("Valor da base: " + q.getBase()+"\n");
+                System.out.println("A área do quadrado é: " + q.getResultado()+"\n");
 
             }
 
@@ -43,9 +43,9 @@ public class App {
                 t.setBase(ler.nextDouble());
                 System.out.println("Insira a altura: ");
                 t.setAltura(ler.nextDouble());
-                System.out.println("Valor da base: " + t.getBase());
-                System.out.println("Valor da altura: " + t.getAltura());
-                System.out.println("A área do triângulo é: " + t.getResultadoTriangulo());
+                System.out.println("Valor da base: " + t.getBase()+"\n");
+                System.out.println("Valor da altura: " + t.getAltura()+"\n");
+                System.out.println("A área do triângulo é: " + t.getResultado()+"\n");
             }
 
             else if (opc == 4) {

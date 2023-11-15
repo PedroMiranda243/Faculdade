@@ -1,5 +1,6 @@
 public class Triangulo extends Poligonos {
-    public double getResultadoTriangulo(){
+    @Override
+    public double getResultado(){
         return (getBase()*getAltura())/2;
         }
     
