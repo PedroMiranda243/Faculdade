@@ -22,7 +22,7 @@ public class Trabalhador extends Humano {
         System.out.println("Fui promovido!\nRecebi um aumento de " + a + "%");
         a = a / 100;
         salario = (salario * a) + salario;
-        System.out.println("Agora meu salário é de " + salario);
+        System.out.println("Agora meu salário é de R$" + salario);
         System.out.println();
         return salario;
     }
