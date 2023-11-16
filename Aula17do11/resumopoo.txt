@@ -1,0 +1,13 @@
+-Abstração: Primeiro transformar algum problema (ou a questão que o professor passar no trabalho) para a linguagem. Dai que vem a abstração,
+de forma abstrata, implementar os problemas do mundo no código, afim de resolver o problema
+
+-Instanciamento: Aplicar efetivamente no seu código a abstração criada, 
+geralmente é por meio a da criação do objeto na classe principal o instanciamento
+
+-Encapsulamento: É o que diz a respeito sobre proteger informações ou dados do sistema,
+controla os acessos a dados de modo que não fiquem vulneravéis a ações indevidas, e torna o código mais legível 
+
+-Herança: É o recurso que permite definir classes diferentes e mais específicas, derivadas de uma classe maior
+daí o nome herança, classes que herdam atributos e comportamentos de outra classe maior.
+
+-Polimorfismo: É a propriedade que permite as abstrações criadas se transformarem, se comportarem de maneira diferente em outras partes do código
