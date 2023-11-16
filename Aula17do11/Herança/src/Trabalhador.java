@@ -22,10 +22,10 @@ public class Trabalhador extends Humano {
 
     // Com seus próprios comportamentos ALÉM dos comportamentos de Humano
     public double exibeAumento(double a) {
-        System.out.println("Fui promovido!\nRecebi um aumento de R$" + a + "%");
+        System.out.println("Fui promovido!\nRecebi um aumento de " + a + "%");
         a = a / 100;
         salario = (salario * a) + salario;
-        System.out.println("Agora meu salário é de " + salario);
+        System.out.println("Agora meu salário é de R$" + salario);
         return salario;
     }
 
