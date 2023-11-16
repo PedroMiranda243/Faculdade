@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        //O instânciamento geralmente ocorre aqui
+        // O instânciamento geralmente ocorre aqui
         Humano h = new Humano();
 
         h.nome = "Camile";
