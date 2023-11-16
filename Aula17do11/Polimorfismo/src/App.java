@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        //seção humano.
+
+        // seção do humano.
         Humano h = new Humano();
 
         h.setNome("Camile");
@@ -11,11 +11,10 @@ public class App {
 
         h.seApresenta();
         h.fazAniversário();
-        
-        h.seApresenta();
-        
 
-        //seção universitário.
+        h.seApresenta();
+
+        // seção do universitário.
         Universitario u = new Universitario();
         u.setNome("Ricardo");
         u.setAltura(1.85);
@@ -29,9 +28,7 @@ public class App {
 
         u.seApresenta();
 
-        
-
-        //seção do trabalhador
+        // seção do trabalhador
         Trabalhador t = new Trabalhador();
         t.setNome("Rafael");
         t.setAltura(1.76);
@@ -44,16 +41,16 @@ public class App {
         t.exibeAumento(25);
 
         t.seApresenta();
-        
 
-        //seção amigo de Pedro
+        // seção amigo de Pedro
         amigoPedro(h);
         amigoPedro(u);
         amigoPedro(t);
 
     }
-    
-    public static void amigoPedro(Humano x){
+
+    // Método só pra exemplificar uma propriedade de polimorfismo
+    public static void amigoPedro(Humano x) {
         System.out.println(x.getNome() + " e Pedro são melhores amigos! :)");
         System.out.println();
     }

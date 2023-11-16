@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        //seção humano.
+        //seção do humano.
         Humano h = new Humano();
 
         h.setNome("Camile");
@@ -15,7 +15,7 @@ public class App {
         h.seApresenta();
         System.out.println();
 
-        //seção universitário.
+        //seção do universitário.
         Universitario u = new Universitario();
         u.setNome("Ricardo");
         u.setAltura(1.85);

@@ -1,3 +1,4 @@
+//Humano se tornou agora uma super classe para as classes que dela herdam.
 public class Humano {
         
     private String nome;
