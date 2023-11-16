@@ -1,10 +1,13 @@
 public class Humano {
-    
+    // Agora os atributos de um humano são privados.
+    // O acesso a esses dados são mais restritos e controlados.
+    // Definido pelo modificador "private" antes do atributo.
     private String nome;
     private double altura;
-    private int idade; 
+    private int idade;
     private char sexo;
 
+    // Aqui mostro como o sistema DEFINE(set), e como o sistema PEGA(get) esses atributos.
     public String getNome() {
         return nome;
     }
@@ -37,14 +40,14 @@ public class Humano {
         this.sexo = sexo;
     }
 
-    public void seApresenta(){
-        System.out.println("Meu nome é "+nome);
-        System.out.println("Eu tenho "+altura+"m de altura");
-        System.out.println("Tenho "+idade+" anos de idade");
-        System.out.println("Sou do sexo "+sexo);
+    public void seApresenta() {
+        System.out.println("Meu nome é " + nome);
+        System.out.println("Eu tenho " + altura + "m de altura");
+        System.out.println("Tenho " + idade + " anos de idade");
+        System.out.println("Sou do sexo " + sexo);
     }
 
-    public int fazAniversário(){
+    public int fazAniversário() {
         return idade++;
     }
 }
