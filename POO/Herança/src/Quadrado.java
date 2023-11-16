@@ -1,5 +1,6 @@
 public class Quadrado extends Poligonos{
-    public double getResultadoQuadrado() {
+    @Override
+    public double getResultado() {
         return getBase()*getBase();
     }
 }
