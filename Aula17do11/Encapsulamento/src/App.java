@@ -2,10 +2,11 @@ public class App {
     public static void main(String[] args) throws Exception {
         Humano h = new Humano();
 
-        h.setNome("Pedro");
-        h.setAltura(1.85);
-        h.setIdade(18);
-        h.setSexo('M');
+        // Aqui um exemplo do sistema definindo os atributos.
+        h.setNome("Camile");
+        h.setAltura(1.59);
+        h.setIdade(20);
+        h.setSexo('F');
 
         h.seApresenta();
         h.fazAniversário();

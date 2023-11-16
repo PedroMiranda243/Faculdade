@@ -1,11 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
+        // O instânciamento geralmente ocorre aqui
         Humano h = new Humano();
 
-        h.nome = "Pedro";
-        h.altura = 1.85;
-        h.idade = 18;
-        h.sexo = 'M';
+        h.nome = "Camile";
+        h.altura = 1.59;
+        h.idade = 20;
+        h.sexo = 'F';
 
         h.seApresenta();
         h.fazAniversário();
