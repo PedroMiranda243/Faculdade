@@ -1,0 +1,36 @@
+create type productType as object(
+    id number,
+    name varchar2(15),
+    description varchar2(22),
+    price number(5, 2),
+    days_valid number
+)
+
+create table products(
+    product productType,
+    estoque number
+)
+
+insert into products(product, estoque)
+
+values (productType(1, 'AA','BBB',3.95,10),50)
+values (productType(1, 'AA','BBB',3.95,10),5)
+values (productType(1, 'AA','BBB',3.95,10),0)
+
+select p.product.id, p.product.name, p.product.description, p.product.price, p.product.days_valid, estoque
+from products p;
+
+
+create type t_pessoa as object(
+    codigo number,
+    nome verchar2(30),
+    endereço varchar2(100)
+    ) not final;
+
+
+create type t_estudante under t_pessoa(
+    cod_dep number,
+    disciplina_principal varchar2(30)
+    ) not final;
+
+
